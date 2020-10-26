@@ -10,6 +10,7 @@ x = datetime.datetime.now()
 print("de datum en tijd is:")
 print(x)
 
+print("")
 print("Wil je het programma nog een keer doen?")
 YesOrNo = input()
 
