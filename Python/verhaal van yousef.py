@@ -1,3 +1,5 @@
+#De bedoeling is dat de speler dit speelt in cmd en niet idle anders werken bepaalde dingen niet.
+
 import os             # Dit zorgt ervoor dat de vorige stukjes tekst verdwijnen (Dit werkt niet in Idle maar wel in cmd)
 os.system("cls")
 introductie = False
@@ -32,7 +34,7 @@ einde_6 = False
 
 
 
-#Hierin wordt verteeld aan de speler hoe het spel werkt
+#Hierin wordt verteld aan de speler hoe het spel werkt
 print("Hoi daar en welkom bij het verhaal van Yousef.")
 print("In dit spel bepaal jij hoe Yousef zijn toekomst eruit gaat zien.")
 print("")
@@ -54,8 +56,9 @@ while keuzeverhaal == True:
 
 #Dit is een kleine introductie dat iets over Yousef verteld
     while introductie == True:
+        os.system("cls")
         print("Yousef is een vluchteling uit Afghanistan")
-        print("Yousef is nu veilig in gelukkig in Nederland maar dat is niet altijd zo geweest")
+        print("Yousef is nu veilig en gelukkig in Nederland maar dat is niet altijd zo geweest")
         print("")
         print("Hij had namelijk verschillende reden om te vluchten.")
         print("Een paar van die reden worden verteld in het verhaal.")
@@ -70,6 +73,7 @@ while keuzeverhaal == True:
 
     #stuk 1 van het verhaal
     while stuk_1 == True:
+        os.system("cls")
         print("Het begin")
         print("")
         print("Yousef woont met zijn drie broers, vier zussen en ouders in Afghanistan.")
@@ -97,6 +101,7 @@ while keuzeverhaal == True:
 
     #stuk 2 van het verhaal
     while stuk_2 == True:
+        os.system("cls")
         print("")
         print("Yousef kiest er voor om voor zijn gezin te blijfen zorgen.")
         print("Hij neemt een pauze van school om geld te kunnen verdienen. zodat hij het gezin kan onderhouden.")
@@ -104,7 +109,9 @@ while keuzeverhaal == True:
         print("Na een tijd besluit Yousef weer te werken en krijgt uiteindelijk een baan van de overheid als projectmanager.")
         print("Hier gaat hij naar andere dorpen om hun te informeren over ontwikkeling.")
         print("Helaas voor Yousef zijn er een hoop mensen tegen de overheid en daarmee ook tegen Yousef zelf.")
-        print("Ga je A: Blijfen werken of B: Een andere baan zoeken?")
+        print("")
+        print("A: Blijfen werken")
+        print("B: zoek een andere baan")
         antwoord_2 = input()
 
         if antwoord_2 == "A":
@@ -117,17 +124,19 @@ while keuzeverhaal == True:
 
         else:
             print("Helaas! Dit is geen geldig antwoord.")
-            print("Yousef kiest ervoor om zijn gezin achter te laten.")
+            print("")
             continue
 
     #stuk 3 van het verhaal
     while stuk_3 == True:
+        os.system("cls")
         print("")
         print("Yousef kiest ervoor om zijn gezin achter te laten.")
         print("Zonder een plek om heen te gaan besluit Yousef een nieuw leven buiten de stad te zoeken.")
         print("Helaas komt hij al gauw tegen een probleem wanneer hij de deur uit is. Hij komt namelijk een stel overvallers tegen.")
         print("Ze willen al zijn bezittingen maar Yousef heeft een hoop achtergelaten.")
         print("De overvallers geloven Yousef niet waardoor hij nu een groot probleem heeft.")
+        print("")
         print("A: schreeuw om hulp")
         print("B: probeer de overvaller af te leiden.")
         antwoord_3 = input()
@@ -144,8 +153,9 @@ while keuzeverhaal == True:
             print("Helaas! Dit is geen geldig antwoord.")
             print("")
 
-    #stuk 4 van het verhaal einde1
+    #stuk 4 van het verhaal (Einde 1)
     while stuk_4 == True:
+        os.system("cls")
         print("")
         print("Yousef besluit om voor hulp te schreeuwen.")
         print("Een van de overvallers houd zijn hand voor de mond van Yousef in de hoop dat niemand hem hoort.")
@@ -180,8 +190,9 @@ while keuzeverhaal == True:
             print("")
             continue
 
-    #stuk 5 van het verhaal einde2
+    #stuk 5 van het verhaal (Einde 2)
     while stuk_5 == True:
+        os.system("cls")
         print("")
         print("Yousef probeert met een smoes de overvallers af te leiden.")
         print("Helaas kwam Yousef niet ver want de overvallers merkte het snel op toen Yousef probeerde te ontsnappen en maakte korte metten met hem.")
@@ -209,11 +220,12 @@ while keuzeverhaal == True:
 
     #stuk 6 van het verhaal
     while stuk_6 == True:
+        os.system("cls")
         print("")
         print("Yousef besluit zijn baan te behouden, maar is niet bewust dat IS optocht is en iedereen die betrokken is bij de overheid dood wil hebben.")
         print("De overheid wilt Yousef naar een andere provincie verplaatsen maar doordat IS zo groot is heeft dat weining nut.")
         print("")
-        print("Nu Yousef nergens heenkan zit hij in de problemen.")
+        print("Nu Yousef nergens heen kan zit hij in de problemen.")
         print("Gelukkig heeft een bekende die informatie over een smokkelaar die hem naar Engeland kan brengen.")
         print("Het is alleen niet goedkoop namelijk $25.000 dollar.")
         print("")
@@ -235,6 +247,7 @@ while keuzeverhaal == True:
 
     #stuk 7 van het verhaal
     while stuk_7 == True:
+        os.system("cls")
         print("")
         print("Yousef wilt een andere baan zoeken maar ondanks dat willen de mensen Yousef alsnog weg hebben waardoor zijn enigste optie vluchten is.")
         print("Gelukkig heeft een bekkende van hem informatie over een smokkelaar die hem naar Engeland kan brengen.")
@@ -258,6 +271,7 @@ while keuzeverhaal == True:
 
     #stuk 8 van het verhaal
     while stuk_8 == True:
+        os.system("cls")
         print("")
         print("Yousef besluit het geld te betalen door middel van zwart geld.")
         print("Eenmaal betaald maakt de smokkelaar een nep paspoort aan voor Yousef.")
@@ -287,6 +301,7 @@ while keuzeverhaal == True:
 
     #stuk 9 van het verhaal
     while stuk_9 == True:
+        os.system("cls")
         print("")
         print("Youssef besluit om zelf te vluchten door onopgemerkt met een vrachtwagen mee liften")
         print("Wanneer niemand het merkt klimt Yousef in een container van een vrachtwagen die vervolgens naar Engeland word verzonden.")
@@ -306,8 +321,8 @@ while keuzeverhaal == True:
             stuk_9 = False
 
         elif antwoord_9 == "B":
-            stuk_13 = True
-            stuk_9 = False
+             stuk_13 = True
+             stuk_9 = False
 
         else:
             print("Helaas! Dit is geen geldig antwoord.")
@@ -315,6 +330,7 @@ while keuzeverhaal == True:
 
     #stuk 10 van het verhaal
     while stuk_10 == True:
+        os.system("cls")
         print("")
         print("Yousef besluit door te gaan met de reis.")
         print("")
@@ -343,6 +359,7 @@ while keuzeverhaal == True:
 
     #stuk 11 van het verhaal
     while stuk_11 == True:
+        os.system("cls")
         print("")
         print("Yousef vertrouwd de smokkelaar niet en besluit de reis in zijn eentje af te maken.")
         print("Eenmaal aangekomen in Istanbul verzint Yousef een smoes om uit de groep te weten te komen.")
@@ -359,6 +376,7 @@ while keuzeverhaal == True:
 
     #stuk 12 van het verhaal
     while stuk_12 == True:
+        os.system("cls")
         print("")
         print("Yousef besluit zich te verstoppen tussen de goederen die zich in de container bevinden.")
         print("De douane besluit speurhonden te gebruiken om eventuele drugs op te sporen.")
@@ -386,6 +404,7 @@ while keuzeverhaal == True:
 
     #stuk 13 van het verhaal einde 3
     while stuk_13 == True:
+        os.system("cls")
         print("")
         print("Yousef besluit zichzelf aan te geven in de hoop dat de situatie niet escaleert.")
         print("De agenten pakken hem op en zetten hem in een tijdelijke cel waar hij de nacht door brengt.")
@@ -408,19 +427,216 @@ while keuzeverhaal == True:
         print("B. Nee")
         einde_2 = input()
 
-        if einde_2 == "A":
+        if einde_3 == "A":
             introductie = True
-            stuk_5 = False
+            stuk_13 = False
 
-        elif einde_2 == "B":
+        elif einde_3 == "B":
             print("Tot de volgende keer!")
             keuzeverhaal = False
-            stuk_5 = False
+            stuk_13 = False
 
         else:
             print("Helaas! Dit is geen geldgig antwoord")
             print("")
             continue
+
+    #stuk 14 van het verhaal
+    while stuk_14 == True:
+        os.system("cls")
+        print("")
+        print("Yousef komt aan bij het dichtbij zijnde politie bureau waar hij alles in het Engels uitlegt.")
+        print("Hier wordt hij goed geholpen en krijgt hij een dagkaart.")
+        print("")
+        print("Even later wordt Yousef opgevangen in ter Apel. ")
+        print("Hier gaat Yousef de komende maanden leren voor zijn inburgeringsexamen en naar school om zo extra te leren.")
+        print("Uiteindelijk haalt Yousef zijn examen en kan hij zelf bepalen wat hij gaat doen.")
+        print("")
+        print("A: ga helpen bij stchting vluchteling")
+        print("B: kijk voor een droom baan")
+        antwoord_14 = input()
+
+        if antwoord_14 == "A":
+            stuk_16 = True
+            stuk_14 = False
+
+        elif antwoord_14 == "B":
+            stuk_17 = True
+            stuk_14 = False
+
+        else:
+            print("Helaas! Dit is geen geldgig antwoord")
+            print("")
+            continue
+
+    #stuk 15 van het verhaal
+    while stuk_15 == True:
+        os.system("cls")
+        print("")
+        print("Yousef besluit eerst een nachtje op straat door te brengen zodat hij goed kan nadenken wat hij hierna gaat doen.")
+        print("Een dag verder en Yousef besluit om hulp te zoeken.")
+        print("Hij heeft namelijk geen geld meer en hij heeft geen voedsel.")
+        print("")
+        print("Yousef gooit een leeg flesje op straat en besluit er van door te gaan.")
+        print("Net wanneer Yousef op het punt staat de straat uit te lopen hoort hij een luide stem.")
+        print("Het is een agent die hem aanspreekt.")
+        print("De agent zag namelijk dat Yousef zijn flesje op straat heeft gegooid in plaats van in de prullenbak")
+        print("Yousef begrijpt helaas niet wat de agent zegt want hij spreekt geen Nederlands.")
+        print("Gelukkig kan Yousef wel Engels waarin hij de hele situatie uitlegt.")
+        print("De agent besluit hem mee te nemen naar het bureau waar hij verhaal kan doen.")
+        print("")
+        print("Druk op enter om door te gaan.")
+        antwoord_15 = input()
+        print("")
+        stuk_14 = True
+        stuk_15 = False
+
+    #stuk 16 van het verhaal
+    while stuk_16 == True:
+        os.system("cls")
+        print("")
+        print("Yousef is erg blij met hoe hij is behandelt door de stichting en besluit zelf andere vluchtelingen te helpen")
+        print("Hij moet heer eerst wel een diploma halen voor de functie die wilt nemen, maar nadat hij deze heeft gehaald heeft hij leuk werk. ")
+        print("")
+        print("Na hard te hebben gewerkt krijgt Yousef een dagje vrij en zit te twijfelen wat hij wilt doen.")
+        print("Hij besluit uiteindelijk om een wandeling te maken in de stad.")
+        print("")
+        print("Druk op enter om door te gaan.")
+        antwoord_16 = input()
+        stuk_21 = True
+        stuk_16 = False
+
+    #stuk 17 van het verhaal (einde4)
+    while stuk_17 == True:
+        os.system("cls")
+        print("")
+        print("Nu Yousef de taal goed beheerst besluit hij te gaan kijken voor een droom baan.")
+        print("Graag wilt hij iets doen met projecten zoals met zijn vorige baan als projectmanager.")
+        print("Na een paar dagen rondkijken komt Yousef een functie als projectleider in de bouw tegen.")
+        print("Yousef is erg enthousiast en besluit direct te solliciteren.")
+        print("Een dag later krijgt Yousef tijdens het gesprek te horen dat hij is aangenomen.")
+        print("Yousef werkt sinds dien met veel plezier voor verschillende grootte bedrijven.")
+        print("")
+        print("Dit was een van de verschillende eindes van het verhaal.")
+        print("Wil je het nog een keer spelen?")
+        print("")
+        print("A. Ja")
+        print("B. Nee")
+        einde_4 = input()
+
+        if einde_4 == "A":
+            introductie = True
+            stuk_17 = False
+
+        elif einde_4 == "B":
+            print("Tot de volgende keer!")
+            keuzeverhaal = False
+            stuk_17 = False
+
+        else:
+            print("Helaas! Dit is geen geldgig antwoord")
+            print("")
+            continue
+
+    #stuk 18 van het verhaal
+    while stuk_18 == True:
+        os.system("cls")
+        print("")
+        print("Yousef neemt een kijkje in het dorp en komt een klein winkeltje tegen.")
+        print("Hier hoopt hij wat eten te kunnen scoren ondanks geen geld te hebben.")
+        print("Gelukkig kan Yousef best goed Engels en vraagt aan de caissière of hij wat te eten kan krijgen.")
+        print("De caissière schudt nee maar geeft Yousef wel een aanbod.")
+        print("De caissière biedt hem aan voor haar te werken, dan krijgt hij een salaris en genoeg voedsel.")
+        print("")
+        print("Druk op enter om door te gaan.")
+        antwoord_18 = input()
+        stuk_20 = True
+        stuk_18 = False
+
+    #stuk 19 van het verhaal
+    while stuk_19 == True:
+        os.system("cls")
+        print("")
+        print("Na een paar uur in de vrachtwagen te hebben gezeten beseft Yousef dat het nog lang kan duren voordat de chauffeur weer vertrekt.")
+        print("Na een tijdje besluit hij om even rond te kijken in het dorpje.")
+        print("")
+        print("Druk op enter om door te gaan.")
+        antwoord_19 = input()
+        stuk_18 = True
+        stuk_19 = False
+
+    #stuk 20 van het verhaal (Einde 5)
+    while stuk_20 == True:
+        os.system("cls")
+        print("")
+        print("Yousef besluit het aanbod aan te nemen en helpt de caissière met de winkel.")
+        print("Hij verdient in het begin net genoeg om een klein appartementje te huren maar begint al snel meer te verdienen om uiteindelijk een fatsoenlijk huis te kopen.")
+        print("Een paar maanden verder en Yousef heeft het nu goed voor elkaar en heeft genoeg geld om een bezoek te brengen aan zijn familie die nog in Afghanistan zit..")
+        print("Ondanks dat hij graag bij zijn familie is besluit Yousef in Engeland te blijven werken.")
+        print("De winkel is na een tijd enorm gegroeid en Yousef heeft het nu erg goed voor elkaar.")
+        print("")
+        print("Dit was een van de verschillende eindes van het verhaal.")
+        print("Als je het wilt kan je het nog altijd opnieuw spelen.")
+        print("")
+        print("A. Ja")
+        print("B. Nee")
+        einde_5 = input()
+
+        if einde_5 == "A":
+            introductie = True
+            stuk_20 = False
+
+        elif einde_5 == "B":
+            print("Tot de volgende keer!")
+            keuzeverhaal = False
+            stuk_20 = False
+
+        else:
+            print("Helaas! Dit is geen geldgig antwoord")
+            print("")
+            continue
+     
+    #stuk 21 van het verhaal (Einde 6)
+    while stuk_21 == True:
+        os.system("cls")
+        print("")
+        print("Yousef besluit een frisse neus te nemen en gaat naar buiten.")
+        print("Na een tijdje door de stad te zijn gelopen komt Yousef een mooie dame tegen.")
+        print("Hij besluit een gesprek met haar te starten die goed verloopt.")
+        print("")
+        print("Een paar jaar verder en Yousef heeft nu een gelukkig gezin.")
+        print("Na een keer zijn familie te hebben bezocht die het weer goed hebben is Yousef erg tevreden.")
+        print("")
+        print("Dit was een van de verschillende eindes van het verhaal.")
+        print("Als je het wilt kan je het nog altijd opnieuw spelen.")
+        print("")
+        print("A. Ja")
+        print("B. Nee")
+        einde_6 = input()
+
+        if einde_6 == "A":
+            introductie = True
+            stuk_21 = False
+
+        elif einde_6 == "B":
+            print("Tot de volgende keer!")
+            keuzeverhaal = False
+            stuk_21 = False
+
+        else:
+            print("Helaas! Dit is geen geldgig antwoord")
+            print("")
+            continue
+     
+        
+        
+        
+        
+        
+        
+
+        
+            
       
 
         
