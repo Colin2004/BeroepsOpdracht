@@ -21,7 +21,7 @@ afstand_tussen_platformen = 3   # de afstand tussen de platformen
 score_voor_volgend_level = 8   # aantal punten voor volgend level
 
 
-background = Image("03330:00000:00033:00000:33333") # De platformen voor op de achtergrond
+achtergrond = Image("03330:00000:00033:00000:33333") # De platformen voor op de achtergrond
 
 
 levels = [30, 25, 20, 18, 15, 12, 10]
@@ -48,7 +48,7 @@ while True:
     dx = check_bounds(dx, 0, 99)
     
     
-    display.show(background) #dit laat de platformen zien
+    display.show(achtergrond) #dit laat de platformen zien
     
     #Dit zorgt ervoor dat de microbit
     dx_scaled = int(5*dx/100)
@@ -60,7 +60,7 @@ while True:
     # de start
     if frame % levels[current_level] == 0:
         score += 1
-        background = background.shift_down(1)
+        achtergrond = achtergrond.shift_down(1)
         
         # naar het volgende level
         if score % score_voor_volgend_level == 0:
@@ -77,7 +77,7 @@ while True:
                 background.set_pixel(x, 0, 3)
     
     #Dit zorgt ervoor dar het bolletje springt wanneer het op een platform land
-    if background.get_pixel(dx_scaled, dy_scaled) == 3 and speed_y > 2:
+    if achtergrond.get_pixel(dx_scaled, dy_scaled) == 3 and speed_y > 2:
         speed_y = -11
         
     # Het spel word hier afgesloten waarneer iemand het platform mist en de grond raakt

@@ -432,7 +432,7 @@ while keuzeverhaal == True:
         print("")
         print("A. Ja")
         print("B. Nee")
-        einde_2 = input()
+        einde_3 = input()
 
         if einde_3 == "A":
             introductie = True
